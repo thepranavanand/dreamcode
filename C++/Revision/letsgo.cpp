@@ -83,15 +83,15 @@ using namespace std;
 int main (){
     bool good = true;
     bool bad = false;
-    cout<<good<<bad;
+    cout<<good<<" "<<bad;
     return 0;
 }
 
 #include<iostream>
 using namespace std;
 int main (){
-    char a = 50;
-    cout<<a;
+    char i = 6, a[20] = {80, 82, 65, 78, 65, 86}; 
+    cout<<a; //prints the ath character.
     return 0;
 }
 
