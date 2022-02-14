@@ -1,9 +1,22 @@
-#include <iostream>    
-#include <iomanip>     
+#include <iostream>
 using namespace std;
-int main ()
-{
-  double float_value =3.14159;
-  cout << float_value << setprecision(3) << float_value << fixed << setprecision(3) << float_value << '\n';
-  return 0;
+typedef long long ll;
+
+int main() {
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+		ll num1, f_num, l_num;
+		cin>>num1;
+		l_num=num1%10;
+		while(num1>=10)
+		{
+			num1=num1/10;
+		}
+		f_num = num1;
+		cout<<f_num+l_num<<"\n";
+		
+	}
+	return 0;
 }
