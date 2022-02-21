@@ -4,8 +4,9 @@ using namespace std;
 int main ()
 {
     int i, n, sub, sum = 0;
-    cout<<"Enter the number of subjects to find average for :\n";
+    cout<<"\nEnter the number of subjects to find average for :\n";
     cin>>n;
+    cout<<"Enter the marks of "<<n<<" subjects :\n";
     i = n;
     while(i--)
     {
