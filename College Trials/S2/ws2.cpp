@@ -6,13 +6,14 @@ class employee
     char name[20];
     int age;
     char des[20];
-    double salary;
+    long salary;
+
 public:
     void getData();
     void putData();
 };
 
-void employee ::getData()
+void employee :: getData()
 {
     cout << "Enter employee name :\n";
     cin >> name;
@@ -24,7 +25,7 @@ void employee ::getData()
     cin >> salary;
 }
 
-void employee ::putData()
+void employee :: putData()
 {
     cout << "\nEmployee Name : " << name;
     cout << "\nEmployee Age : " << age;
