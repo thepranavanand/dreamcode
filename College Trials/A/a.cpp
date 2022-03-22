@@ -10,8 +10,8 @@ void login()
         int count;
         string user, pass, u, p;
         system("cls");
-        cout << "please enter the following details" << endl;
-        cout << "USERNAME :";
+        cout << "Please enter the following details :" << endl;
+        cout << "USERNAME : ";
         cin >> user;
         cout << "PASSWORD :";
         cin >> pass;
@@ -29,7 +29,7 @@ void login()
         input.close();
         if (count == 1)
         {
-                cout << "\nHello" << user << "\nLOGIN SUCESS\nWe're glad that you're here.\nThanks for logging in\n";
+                cout << "\nHello " << user << "\nLOGIN SUCCESS...\nWe're glad that you're here...\nThanks for logging in..\n";
                 cin.get();
                 cin.get();
                 main();
@@ -53,7 +53,9 @@ void registr()
         ofstream reg("database.txt", ios::app);
         reg << reguser << ' ' << regpass << endl;
         system("cls");
-        cout << "\nRegistration Sucessful\n";
+        cout << "____________________________\n";
+        cout << "\nREGISTRATION SUCCESSFUL...\n";
+        cout << "____________________________\n";
         main();
 }
 
@@ -61,7 +63,7 @@ void forgot()
 {
         int ch;
         system("cls");
-        cout << "Forgotten ? We're here for help\n";
+        cout << "Forgotten password? We're here for your help.\n";
         cout << "1.Search your id by username" << endl;
         cout << "2.Search your id by password" << endl;
         cout << "3.Main menu" << endl;
@@ -73,7 +75,7 @@ void forgot()
         {
                 int count = 0;
                 string searchuser, su, sp;
-                cout << "\nEnter your remembered username :";
+                cout << "\nEnter username :";
                 cin >> searchuser;
 
                 ifstream searchu("database.txt");
@@ -131,8 +133,8 @@ void forgot()
                 }
                 else
                 {
-                        cout << "Sorry, We cannot found your password in our database \n";
-                        cout << "\nkindly contact your administrator for more information\n";
+                        cout << "Sorry, Your password was not found in out database. \n";
+                        cout << "\nkindly contact your administrator for more information.\n";
                         cin.get();
                         cin.get();
                         main();
@@ -154,13 +156,14 @@ void forgot()
 main()
 {
         int choice;
-        cout << "***********************************************************************\n\n";
-        cout << "                      Welcome to login page                               \n\n";
-        cout << "*******************        MENU        ********************************\n\n";
-        cout << "1.LOGIN\n";
-        cout << "2.REGISTER\n";
-        cout << "3.FORGOT PASSWORD (or) USERNAME\n";
-        cout << "4.Exit\n";
+        cout << "_______________________________________________________________________\n\n\n";
+        cout << "                      WELCOME TO LOGIN AND REGISTRATION PAGE            \n\n";
+        cout << "_______________________________________________________________________  \n\n";
+        cout << "MENU BAR :\n\n";
+        cout << "1.LOGIN WITH CREDENTIALS\n";
+        cout << "2.REGISTER \n";
+        cout << "3.FORGOTTEN PASSWORD OR USERNAME ?\n";
+        cout << "4.EXIT\n";
         cout << "\nEnter your choice : ";
         cin >> choice;
         cout << endl;
@@ -181,8 +184,7 @@ main()
                 break;
         default:
                 system("cls");
-                cout << "Wrong Choice Intered\n"
-                     << endl;
+                cout << "Wrong Choice Entered\n" << endl;
                 main();
         }
 }
