@@ -36,7 +36,7 @@ void login()
         }
         else
         {
-                cout << "\nLOGIN ERROR\nPlease check your username and password\n";
+                cout << "\nLOGIN ERROR\nPlease check your username and password";
                 main();
         }
 }
@@ -134,7 +134,7 @@ void forgot()
                 else
                 {
                         cout << "Sorry, Your password was not found in out database. \n";
-                        cout << "\nkindly contact your administrator for more information.\n";
+                        cout << "\nKindly contact your administrator for more information.\n";
                         cin.get();
                         cin.get();
                         main();
@@ -156,14 +156,14 @@ void forgot()
 main()
 {
         int choice;
-        cout << "_______________________________________________________________________\n\n\n";
-        cout << "                      WELCOME TO LOGIN AND REGISTRATION PAGE            \n\n";
-        cout << "_______________________________________________________________________  \n\n";
+        cout << "_______________________________________________________________________________\n\n";
+        cout << "                      WELCOME TO LOGIN AND REGISTRATION PAGE            \n";
+        cout << "_______________________________________________________________________________  \n\n";
         cout << "MENU BAR :\n\n";
-        cout << "1.LOGIN WITH CREDENTIALS\n";
-        cout << "2.REGISTER \n";
-        cout << "3.FORGOTTEN PASSWORD OR USERNAME ?\n";
-        cout << "4.EXIT\n";
+        cout << "1. SignIn/LogIn (Press 1 followed by Enter Key to select this)\n";
+        cout << "2. SignUp/Register (Press 2 followed by Enter Key to select this)\n";
+        cout << "3. Forgotten Password/UserName (Press 3 followed by Enter Key to select this)\n";
+        cout << "4. Press 4 (followed by Enter Key) to EXIT.\n";
         cout << "\nEnter your choice : ";
         cin >> choice;
         cout << endl;
@@ -184,7 +184,8 @@ main()
                 break;
         default:
                 system("cls");
-                cout << "Wrong Choice Entered\n" << endl;
+                cout << "Wrong Choice Entered\n"
+                     << endl;
                 main();
         }
 }
