@@ -43,15 +43,18 @@ void login()
 void registr()
 {
 
-        string reguser, regpass, ru, rp;
+        string reguser, regpass, answer, ru, rp;
         system("cls");
         cout << "Enter the username :";
         cin >> reguser;
         cout << "\nEnter the password :";
         cin >> regpass;
+        cout << "Name your favourite sport (Answer in just a word).";
+        cin.get();
+        getline(cin, answer);
 
         ofstream reg("database.txt", ios::app);
-        reg << reguser << ' ' << regpass << endl;
+        reg << reguser << ' ' << regpass << ' ' << answer << endl;
         system("cls");
         cout << "____________________________\n";
         cout << "\nREGISTRATION SUCCESSFUL...\n";
@@ -74,12 +77,12 @@ void forgot()
         case 1:
         {
                 int count = 0;
-                string searchuser, su, sp;
+                string searchuser, su, sp, sa, answer;
                 cout << "\nEnter username :";
                 cin >> searchuser;
 
                 ifstream searchu("database.txt");
-                while (searchu >> su >> sp)
+                while (searchu >> su >> sp >> sa)
                 {
                         if (su == searchuser)
                         {
@@ -87,7 +90,24 @@ void forgot()
                         }
                 }
                 searchu.close();
+
                 if (count == 1)
+                {
+                        cout << "Name your favourite artist.";
+                        cin >> answer;
+
+                        ifstream searcha("database.txt");
+                        while (searcha >> su >> sp >> sa)
+                        {
+                                if (sa == answer)
+                                {
+                                        count = 2;
+                                }
+                        }
+                        searcha.close();
+                }
+
+                if (count == 2)
                 {
                         cout << "\n\nHurray, account found\n";
                         cout << "\nYour password is " << sp;
@@ -95,6 +115,10 @@ void forgot()
                         cin.get();
                         system("cls");
                         main();
+                }
+                else if (count == 1)
+                {
+                        cout << "Wrong answer for the security question. \nPlease try again.";
                 }
                 else
                 {
@@ -109,12 +133,12 @@ void forgot()
         case 2:
         {
                 int count = 0;
-                string searchpass, su2, sp2;
+                string searchpass, su2, sp2, sa2, fun2;
                 cout << "\nEnter the remembered password :";
                 cin >> searchpass;
 
                 ifstream searchp("database.txt");
-                while (searchp >> su2 >> sp2)
+                while (searchp >> su2 >> sp2 >> sa2)
                 {
                         if (sp2 == searchpass)
                         {
@@ -122,14 +146,34 @@ void forgot()
                         }
                 }
                 searchp.close();
+
                 if (count == 1)
                 {
+                        cout << "Name your favourite artist.";
+                        cin >> fun2;
+
+                        ifstream searchA("database.txt");
+                        while (searchA >> su2 >> sp2 >> sa2)
+                        {
+                                if (sa2 == fun2)
+                                {
+                                        count = 2;
+                                }
+                        }
+                        searchA.close();
+                }
+                if (count == 2)
+                {
                         cout << "\nYour password is found in the database \n";
-                        cout << "\nYour Id is : " << su2;
+                        cout << "\nYour Id is : " << su2 <<endl;
                         cin.get();
                         cin.get();
                         system("cls");
                         main();
+                }
+                else if (count == 1)
+                {
+                        cout << "Wrong answer for the security question. \nPlease try again.";
                 }
                 else
                 {
