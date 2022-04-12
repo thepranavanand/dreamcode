@@ -49,7 +49,7 @@ void registr()
         cin >> reguser;
         cout << "\nEnter the password :";
         cin >> regpass;
-        cout << "Name your favourite sport (Answer in just a word).";
+        cout << "\nName your favourite sport (Answer in just a word).\n";
         cin.get();
         getline(cin, answer);
 
@@ -78,7 +78,7 @@ void forgot()
         {
                 int count = 0;
                 string searchuser, su, sp, sa, answer;
-                cout << "\nEnter username :";
+                cout << "\nEnter username: ";
                 cin >> searchuser;
 
                 ifstream searchu("database.txt");
@@ -93,7 +93,7 @@ void forgot()
 
                 if (count == 1)
                 {
-                        cout << "Name your favourite artist.";
+                        cout << "Name your favourite sports.\n";
                         cin >> answer;
 
                         ifstream searcha("database.txt");
@@ -149,7 +149,7 @@ void forgot()
 
                 if (count == 1)
                 {
-                        cout << "Name your favourite artist.";
+                        cout << "Name your favourite sports.";
                         cin >> fun2;
 
                         ifstream searchA("database.txt");
