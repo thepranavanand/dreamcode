@@ -10,10 +10,10 @@ void login()
         int count;
         string user, pass, u, p;
         system("cls");
-        cout << "Please enter the following details :" << endl;
-        cout << "USERNAME : ";
+        cout << "Please enter the following details: " << endl;
+        cout << "USERNAME: ";
         cin >> user;
-        cout << "PASSWORD :";
+        cout << "PASSWORD: ";
         cin >> pass;
 
         ifstream input("database.txt");
@@ -36,7 +36,7 @@ void login()
         }
         else
         {
-                cout << "\nLOGIN ERROR\nPlease check your username and password";
+                cout << "\nLOGIN ERROR\nPlease check your username and password :/";
                 main();
         }
 }
@@ -45,9 +45,9 @@ void registr()
 
         string reguser, regpass, answer, ru, rp;
         system("cls");
-        cout << "Enter the username :";
+        cout << "Enter the username: ";
         cin >> reguser;
-        cout << "\nEnter the password :";
+        cout << "\nEnter the password: ";
         cin >> regpass;
         cout << "\nName your favourite sport (Answer in just a word).\n";
         cin.get();
@@ -123,7 +123,7 @@ void forgot()
                 else
                 {
                         cout << "\nSorry, Your userID is not found in our database\n";
-                        cout << "\nPlease kindly contact your system administrator for more details \n";
+                        cout << "\nPlease kindly contact your system administrator for more details\n";
                         cin.get();
                         cin.get();
                         main();
@@ -134,7 +134,7 @@ void forgot()
         {
                 int count = 0;
                 string searchpass, su2, sp2, sa2, fun2;
-                cout << "\nEnter the remembered password :";
+                cout << "\nEnter the remembered password: ";
                 cin >> searchpass;
 
                 ifstream searchp("database.txt");
@@ -149,7 +149,7 @@ void forgot()
 
                 if (count == 1)
                 {
-                        cout << "Name your favourite sports.";
+                        cout << "Name your favourite sports: ";
                         cin >> fun2;
 
                         ifstream searchA("database.txt");
@@ -164,8 +164,8 @@ void forgot()
                 }
                 if (count == 2)
                 {
-                        cout << "\nYour password is found in the database \n";
-                        cout << "\nYour Id is : " << su2 <<endl;
+                        cout << "\nYour password is found in the database.\n";
+                        cout << "\nYour Id is: " << su2 <<endl;
                         cin.get();
                         cin.get();
                         system("cls");
@@ -193,7 +193,7 @@ void forgot()
                 main();
         }
         default:
-                cout << "Sorry, You entered wrong choice. Kindly try again" << endl;
+                cout << "Sorry, You entered wrong choice. Kindly try again." << endl;
                 forgot();
         }
 }
@@ -203,12 +203,12 @@ main()
         cout << "_______________________________________________________________________________\n\n";
         cout << "                      WELCOME TO LOGIN AND REGISTRATION PAGE            \n";
         cout << "_______________________________________________________________________________  \n\n";
-        cout << "MENU BAR :\n\n";
+        cout << "MENU BAR: \n\n";
         cout << "1. SignIn/LogIn (Press 1 followed by Enter Key to select this)\n";
         cout << "2. SignUp/Register (Press 2 followed by Enter Key to select this)\n";
         cout << "3. Forgotten Password/UserName (Press 3 followed by Enter Key to select this)\n";
         cout << "4. Press 4 (followed by Enter Key) to EXIT.\n";
-        cout << "\nEnter your choice : ";
+        cout << "\nEnter your choice: ";
         cin >> choice;
         cout << endl;
         switch (choice)
@@ -228,8 +228,7 @@ main()
                 break;
         default:
                 system("cls");
-                cout << "Wrong Choice Entered\n"
-                     << endl;
+                cout << "Wrong Choice Entered\n" << endl;
                 main();
         }
 }
