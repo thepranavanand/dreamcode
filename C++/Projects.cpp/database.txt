@@ -1,3 +1,0 @@
-thepranavanandcd "c:\December\Dream Code\C++\Projects.cpp\" ; if ($?) { g++ IPR.cpp -o IPR } ; if ($?) { .\IPR }
-cd "c:\December\Dream Code\C++\Projects.cpp\" ; if ($?) { g++ IPR.cpp -o IPR } ; if ($?) { .\IPR }
-thepranavanand Res@123 Cricket
