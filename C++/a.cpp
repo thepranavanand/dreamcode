@@ -1,8 +1,8 @@
-#include<iostream>
+#include"stdio.h"
 using namespace std;
 
 int main ()
 {
-    auto num = 9.36;
-    cout << num;
+    LOG("lawnasur");
 }
+hello.cjdjffdhruyu

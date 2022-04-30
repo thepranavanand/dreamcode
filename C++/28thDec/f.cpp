@@ -3,8 +3,8 @@
 using namespace std;
 int main()
 {
-    cout << "Pranav Anand" << endl;
-    cout << "UID: 21BCS7719" << endl;
+    cout << "Amarkant" << endl;
+    cout << "UID: 21BCS7631" << endl;
     int sum = 0, N;
     cout << "Enter number of students in Class:\n";
     cin >> N;
