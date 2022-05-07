@@ -1,8 +1,7 @@
-#include"stdio.h"
+#include"divyam.h"
 using namespace std;
 
 int main ()
 {
-    LOG("lawnasur");
+    LOG("hello");
 }
-hello.cjdjffdhruyu
