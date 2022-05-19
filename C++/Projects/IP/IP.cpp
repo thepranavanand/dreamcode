@@ -2,13 +2,34 @@
 #include <istream>
 #include <fstream>
 #include <stdlib.h>
-#include <string.h>
+#include <cstring>
 using namespace std;
 int main();
+void registr()
+{
+
+        string signup, passW, answer, ru, rp;
+        system("cls");
+        cout << "Enter the username: ";
+        cin >> signup;
+        cout << "\nEnter the password: ";
+        cin >> passW;
+        cout << "\nName your favourite sport (answer in just a word).\n";
+        cin.get();
+        getline(cin, answer);
+
+        ofstream reg("database.txt", ios::app);
+        reg << signup << ' ' << passW << ' ' << answer << endl;
+        system("cls");
+        cout << "____________________________\n";
+        cout << "\nREGISTRATION SUCCESSFUL....\n";
+        cout << "____________________________\n";
+        main();
+}
 void login()
 {
         int count;
-        string user, pass, u, p;
+        string user, pass, u, p, a;
         system("cls");
         cout << "Please enter the following details: " << endl;
         cout << "USERNAME: ";
@@ -17,7 +38,7 @@ void login()
         cin >> pass;
 
         ifstream input("database.txt");
-        while (input >> u >> p)
+        while (input >> u >> p >> a)
         {
                 if (u == user && p == pass)
 
@@ -40,28 +61,6 @@ void login()
                 main();
         }
 }
-void registr()
-{
-
-        string reguser, regpass, answer, ru, rp;
-        system("cls");
-        cout << "Enter the username: ";
-        cin >> reguser;
-        cout << "\nEnter the password: ";
-        cin >> regpass;
-        cout << "\nName your favourite sport (Answer in just a word).\n";
-        cin.get();
-        getline(cin, answer);
-
-        ofstream reg("database.txt", ios::app);
-        reg << reguser << ' ' << regpass << ' ' << answer << endl;
-        system("cls");
-        cout << "____________________________\n";
-        cout << "\nREGISTRATION SUCCESSFUL...\n";
-        cout << "____________________________\n";
-        main();
-}
-
 void forgot()
 {
         int ch;
@@ -193,7 +192,7 @@ void forgot()
                 main();
         }
         default:
-                cout << "Sorry, You entered wrong choice. Kindly try again." << endl;
+                cout << "Sorry, You entered wrong choice. Please try again." << endl;
                 forgot();
         }
 }
@@ -204,8 +203,8 @@ main()
         cout << "                      WELCOME TO LOGIN AND REGISTRATION PAGE            \n";
         cout << "_______________________________________________________________________________  \n\n";
         cout << "MENU BAR: \n\n";
-        cout << "1. SignIn/LogIn (Press 1 followed by Enter Key to select this)\n";
-        cout << "2. SignUp/Register (Press 2 followed by Enter Key to select this)\n";
+        cout << "1. SignUp/Register (Press 1 followed by Enter Key to select this)\n";
+        cout << "2. SignIn/LogIn (Press 2 followed by Enter Key to select this)\n";
         cout << "3. Forgotten Password/UserName (Press 3 followed by Enter Key to select this)\n";
         cout << "4. Press 4 (followed by Enter Key) to EXIT.\n";
         cout << "\nEnter your choice: ";
@@ -214,17 +213,17 @@ main()
         switch (choice)
         {
         case 1:
-                login();
+                registr();
                 break;
         case 2:
-                registr();
+                login();
                 break;
         case 3:
                 forgot();
                 break;
         case 4:
 
-                cout << "Thanks for using this program\nThis program is created by @thepranavanand\n\n";
+                cout << "Thanks for using this program.\nThis program is created for Independent Project by Pranav, Anjil, Swastik, Amarkant and Akshat.\\n\n";
                 break;
         default:
                 system("cls");
