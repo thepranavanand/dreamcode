@@ -5,7 +5,7 @@
 #include <cstring>
 using namespace std;
 int main();
-void signup()
+void registr()
 {
 
         string nameUp, passW, answer;
@@ -92,7 +92,7 @@ void login()
                 }
         }
 }
-void forgotcred()
+void forgot()
 {
         int ch;
         system("cls");
@@ -164,7 +164,7 @@ void forgotcred()
                 else if (count == 1)
                 {
                         cout << "Wrong answer for the security question. \nPlease try again.";
-                        forgotcred();
+                        forgot();
                 }
                 else
                 {
@@ -227,7 +227,7 @@ void forgotcred()
                         cout << "Kindly recheck your credentials.\n";
                         cin.get();
                         cin.get();
-                        forgotcred();
+                        forgot();
                 }
 
                 break;
@@ -239,15 +239,16 @@ void forgotcred()
         }
         default:
                 cout << "Sorry, You entered wrong choice. Please try again." << endl;
-                forgotcred();
+                forgot();
         }
 }
 main()
 {
         int choice;
         system("cls");
+        cout <<"This program is designed for Independent Project.";
         cout << "\n_______________________________________________________________________________\n\n";
-        cout << "                      Login and Registration System Using C++            \n                         (Designed for Independent Project.)";
+        cout << "                      Login and Registration System Using C++            \n";
         cout << "\n_______________________________________________________________________________\n\n";
         cout << "Main Menu: \n\n";
         cout << "1. SignUp/Register (Press 1 followed by Enter Key to select this)\n";
@@ -260,13 +261,13 @@ main()
         switch (choice)
         {
         case 1:
-                signup();
+                registr();
                 break;
         case 2:
                 login();
                 break;
         case 3:
-                forgotcred();
+                forgot();
                 break;
         case 4:
                 cout << "Thanks for using this program.\nThis program is created for Independent Project by: \nPranav (21BCS7719)\nAnjil (21BCS7371)\nSwastik (21BCS7642)\nAmarkant (21BCS7631)\nAkshat(21BCS7587).\n:)\n\n";

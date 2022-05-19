@@ -2,3 +2,9 @@ thepranav 1234 cricket
 pack 9835 football
 divyam Pp@9835 golf
 shaswat 1256 gta
+aditya 1234 cricketbottle cd "c:\December\Dream Code\C++\Projects\IP\" ; if ($?) { g++ IP.cpp -o IP } ; if ($?) { .\IP }
+bottle f cd "c:\December\Dream Code\C++\Projects\IP\" ; if ($?) { g++ IP.cpp -o IP } ; if ($?) { .\IP }
+cd "c:\December\Dream Code\C++\Projects\IP\" ; if ($?) { g++ IP.cpp -o IP } ; if ($?) { .\IP }
+thepranav cd "c:\December\Dream Code\C++\Projects\IP\" ; if ($?) { g++ IP.cpp -o IP } ; if ($?) { .\IP }
+thecd "c:\December\Dream Code\C++\Projects\IP\" ; if ($?) { g++ IP.cpp -o IP } ; if ($?) { .\IP }
+bottle ground cricket
