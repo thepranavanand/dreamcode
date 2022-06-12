@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <cstring>
 using namespace std;
-int main();     
+int main();
 void signup()
 {
 
@@ -131,7 +131,7 @@ void forgotcred()
                         {
                                 if (sAns == answer)
                                 {
-                                        count = 2;
+                                        count = 1;
                                 }
                         }
                         recans.close();
