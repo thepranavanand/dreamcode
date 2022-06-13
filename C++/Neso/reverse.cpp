@@ -18,7 +18,7 @@ public:
             fnum = (fnum * 10) + temp;
             num = num / 10;
         }
-        cout << fnum;
+        return fnum;
     }
 };
 
@@ -27,6 +27,7 @@ int main()
     int a;
     cin >> a;
     reverse obj;
-    obj.rev(a);
+    int rev = obj.rev(a);
+    cout << rev;
     return 0;
 }
