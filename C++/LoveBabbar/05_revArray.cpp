@@ -9,6 +9,14 @@ void reverse(int arr[], int N)
         swap(arr[i], arr[j]);
         j--;
     }
+//  //  //  //  //  //  //  //  //  //
+    // int i = 0, j = N-1;
+    // while(i<=j){
+    //     swap(arr[i], arr[j]);
+    //     i++;
+    //     j--:
+    // }
+    
 }
 int main()
 {
