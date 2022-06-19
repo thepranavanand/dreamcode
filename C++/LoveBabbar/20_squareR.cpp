@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int N)
+int sqRoot(int N)
 {
     int start = 0;
     int end = N;
@@ -26,24 +26,10 @@ int binarySearch(int N)
     }
     return temp;
 }
-double sqRoot(int N, int precision)
-{
-    double tempNum = binarySearch(N);
-    double factor = 1;
-    double ans;
-    for (double i = 0; i < precision; i++)
-    {
-        factor = factor / 10;
-        for (double j = tempNum; j*j< N; j += factor)
-        {
-            ans = j;
-        }
-    }
-    return ans;
-}
+
 int main()
 {
-    int num, precision;
-    cin >> num >> precision;
-    cout << sqRoot(num, precision);
+    int num;
+    cin >> num;
+    cout << sqRoot(num);
 }

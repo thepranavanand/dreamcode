@@ -1,22 +1,24 @@
+// https://youtu.be/sNrLlmOIn-c
+
 #include <iostream>
 using namespace std;
 
 void reverse(int arr[], int N)
 {
-    int temp = 0, j = N - 1;
-    for (int i = 0; i <= j; i++)
+    int i = 0, j = N - 1;
+    while (i <= j)
     {
         swap(arr[i], arr[j]);
-        j--;
+        i++;
+        j--:
     }
-//  //  //  //  //  //  //  //  //  //
-    // int i = 0, j = N-1;
-    // while(i<=j){
+    //  //  //  //  //  //  //  //  //  //
+    // int temp = 0, j = N - 1;
+    // for (int i = 0; i <= j; i++)
+    // {
     //     swap(arr[i], arr[j]);
-    //     i++;
-    //     j--:
+    //     j--;
     // }
-    
 }
 int main()
 {

@@ -1,6 +1,8 @@
+// https://youtu.be/oVa8DfUDKTw
 /*
 Q. You are given an array ARR of size N containing each number between 1 and (N - 1) at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
 */
+
 
 #include <iostream>
 using namespace std;

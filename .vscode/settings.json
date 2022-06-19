@@ -5,7 +5,8 @@
         "iomanip": "cpp",
         "cmath": "cpp",
         "functional": "c",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

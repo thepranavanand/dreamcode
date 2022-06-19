@@ -1,5 +1,4 @@
 //Not done yet......
-//Write all questions and links
 
 #include <iostream>
 #include "arrPrint.h"

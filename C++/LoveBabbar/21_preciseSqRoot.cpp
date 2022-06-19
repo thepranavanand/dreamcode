@@ -28,13 +28,20 @@ int binarySearch(int N)
 }
 double sqRoot(int N, int precision)
 {
-    double tempNum = binarySearch(N);
+    double ans = binarySearch(N);
     double factor = 1;
-    double ans;
     for (double i = 0; i < precision; i++)
     {
         factor = factor / 10;
-        for (double j = tempNum; j*j< N; j += factor)
+        for (double j = ans; j*j< N; j += factor) 
+        //The main purpose of this for loop is to get the required value out of j, don't get confused. This could have been written as :
+        /*
+        j = ans;
+        while(j*j<N){
+            j = j+factor;
+        }
+        return j;
+        */
         {
             ans = j;
         }

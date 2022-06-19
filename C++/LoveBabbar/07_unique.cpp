@@ -2,6 +2,8 @@
 Now, in the given array/list, 'M' numbers are present twice and one number is present only once.
 You need to find and return that number which is unique in the array/list.*/
 
+// https://youtu.be/oVa8DfUDKTw
+
 #include <iostream>
 using namespace std;
 
