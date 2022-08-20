@@ -1,12 +1,12 @@
 package tutorial1;
+
 import java.util.Scanner;
 
-public class input {
+public class s1_input {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		Scanner fun = new Scanner(System.in);
+Scanner fun = new Scanner(System.in);
 		
 //		//String input
 //		String fun1 = fun.next();
@@ -30,5 +30,4 @@ public class input {
 		System.out.println(num);
 		
 	}
-
 }

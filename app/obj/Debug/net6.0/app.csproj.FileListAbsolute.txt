@@ -1,0 +1,15 @@
+C:\December\Dream Code\app\bin\Debug\net6.0\app.exe
+C:\December\Dream Code\app\bin\Debug\net6.0\app.deps.json
+C:\December\Dream Code\app\bin\Debug\net6.0\app.runtimeconfig.json
+C:\December\Dream Code\app\bin\Debug\net6.0\app.dll
+C:\December\Dream Code\app\bin\Debug\net6.0\app.pdb
+C:\December\Dream Code\app\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\December\Dream Code\app\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\December\Dream Code\app\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\December\Dream Code\app\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\December\Dream Code\app\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\December\Dream Code\app\obj\Debug\net6.0\app.dll
+C:\December\Dream Code\app\obj\Debug\net6.0\refint\app.dll
+C:\December\Dream Code\app\obj\Debug\net6.0\app.pdb
+C:\December\Dream Code\app\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\December\Dream Code\app\obj\Debug\net6.0\ref\app.dll

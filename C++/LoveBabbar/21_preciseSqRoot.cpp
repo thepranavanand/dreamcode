@@ -33,8 +33,8 @@ double sqRoot(int N, int precision)
     for (double i = 0; i < precision; i++)
     {
         factor = factor / 10;
-        for (double j = ans; j*j< N; j += factor) 
-        //The main purpose of this for loop is to get the required value out of j, don't get confused. This could have been written as :
+        for (double j = ans; j * j < N; j += factor)
+        // The main purpose of this for loop is to get the required value out of j, don't get confused. This could have been written as :
         /*
         j = ans;
         while(j*j<N){

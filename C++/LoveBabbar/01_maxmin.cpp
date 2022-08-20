@@ -19,7 +19,7 @@ int arrSmall(int arr[], int N){
     int mini = INT_MAX;
     for(int i = 0; i<N; i++){
         mini = min(mini, arr[i]); //same as below two lines
-        // if(arr[i]<minin)
+        // if(arr[i]<mini)
         //     mini = arr[i];
     }
     return mini;

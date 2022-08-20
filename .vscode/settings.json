@@ -6,7 +6,8 @@
         "cmath": "cpp",
         "functional": "c",
         "typeinfo": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "utility": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
