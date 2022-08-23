@@ -10,7 +10,7 @@ void reverse(int arr[], int N)
     {
         swap(arr[i], arr[j]);
         i++;
-        j--:
+        j--;
     }
     //  //  //  //  //  //  //  //  //  //
     // int temp = 0, j = N - 1;
