@@ -4,7 +4,7 @@ package tutorial1;
 
 import java.util.Scanner;
 
-public class Maths {
+public class s3_Maths {
 
 	public static void main(String[] args) {
 		

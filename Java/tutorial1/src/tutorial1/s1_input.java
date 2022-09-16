@@ -1,4 +1,3 @@
-package tutorial1;
 
 import java.util.Scanner;
 

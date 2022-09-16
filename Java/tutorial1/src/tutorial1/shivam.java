@@ -1,4 +1,4 @@
-package tutorial1;
+package com.company;
 import java.util.Scanner;
 public class shivam {
 
