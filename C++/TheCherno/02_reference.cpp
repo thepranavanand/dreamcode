@@ -4,7 +4,7 @@
 #define LOG(a) std::cout<<a<<std::endl;
 int main ()
 {
-    //References are basically an alias.
+    // References are basically an alias.
     // Below are references :
     int a = 8;
     int& ref = a; 
