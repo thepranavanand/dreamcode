@@ -4,10 +4,11 @@
 using namespace std;
 
 int main (){
-    stack<char> s;
-    // s.push(2);
-    // s.push(5);
-    // s.pop();
-    // s.push('c','a');
+    stack<int> s;
+    s.push(2);
+    s.push(5);
+    s.pop();
+    s.pop();
+    cout << s.top();
     cout << s.empty();
 }
