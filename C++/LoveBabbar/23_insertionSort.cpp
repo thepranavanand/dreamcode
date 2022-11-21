@@ -1,5 +1,5 @@
 #include <iostream>
-#include "arrPrint.h"
+#include "arrOper.h"
 using namespace std;
 
 void insertionSort(int *arr, int n)
@@ -14,12 +14,13 @@ void insertionSort(int *arr, int n)
             j--;
         }
         arr[j + 1] = temp;
-    }
+    }   
 }
 
 int main()
 {
-    int arr[7] = {4, 2, 6, 2, 8, 9, 1};
+    int arr[7];
+    inputArr(arr, 7);
     insertionSort(arr, 7);
     printArr(arr, 7);
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
             "name": "Launch MyCalc",
             "request": "launch",
             "mainClass": "MyCalc",
