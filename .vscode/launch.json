@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stream",
+            "request": "launch",
+            "mainClass": "stream",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",

@@ -10,7 +10,7 @@ class queue
 
 public:
     queue()
-    {
+    {++
         size = 169696;
         arr = new int[size];
         qfront = 0;
