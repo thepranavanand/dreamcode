@@ -1,11 +1,10 @@
-import java.io.OutputStream;
 import java.io.FileOutputStream;
 
 class stream {
-    public static void main(String args[]) {
+    public static void Main(String args[]) {
         String str = "Hey there mate";
         try {
-            OutputStream obj = new FileOutputStream("output.txt");
+            FileOutputStream obj = new FileOutputStream("output.txt");
             byte[] arr = str.getBytes();
             obj.write(arr);
             obj.close();
@@ -14,8 +13,6 @@ class stream {
         }
     }
 }
-
-
 
 
 

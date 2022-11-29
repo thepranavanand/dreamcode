@@ -28,7 +28,7 @@ class hell extends Dog{
   }
 }
 
-public class App{
+public class abstractA{
   public static void Main(String args[]){
     hell d = new hell();
     d.bark();

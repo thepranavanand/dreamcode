@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch q",
+            "request": "launch",
+            "mainClass": "q",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch app",
+            "request": "launch",
+            "mainClass": "app",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Persist",
+            "request": "launch",
+            "mainClass": "Persist",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
             "name": "Launch stream",
             "request": "launch",
             "mainClass": "stream",
