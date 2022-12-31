@@ -1,3 +1,0 @@
-thepranav 1234 racket
-akshat 1234 golf
-divyam 1234 cricket

@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch First2",
+            "request": "launch",
+            "mainClass": "First2",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch First",
+            "request": "launch",
+            "mainClass": "First",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ama",
+            "request": "launch",
+            "mainClass": "ama",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
+            "name": "Launch jdbc",
+            "request": "launch",
+            "mainClass": "jdbc",
+            "projectName": "Dream Code_387ac67c"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",
